@@ -56,3 +56,6 @@ docs/latex/
 # Docker volumes
 infra/data/
 EOF
+
+# Personal planning, kept local-only
+PROJECT_PLAN.md
