@@ -1,0 +1,58 @@
+cat > .gitignore << 'EOF'
+# Build outputs
+build/
+dist/
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.a
+*.so
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# C/C++
+*.gcda
+*.gcno
+*.gcov
+
+# Editors
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.template
+.idea/
+*.swp
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+
+# Secrets / local config
+.env
+.env.local
+*.local
+
+# Tooling
+.cache/
+node_modules/
+
+# Doxygen
+docs/html/
+docs/latex/
+
+# Docker volumes
+infra/data/
+EOF
