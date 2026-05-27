@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STM32 Debug",
+
+            "preLaunchTask": "Build Firmware",
+
+            "cwd": "${workspaceFolder}/firmware",
+
+            "type": "cortex-debug",
+            "request": "launch",
+
+            "servertype": "openocd",
+
+            "executable": "${workspaceFolder}/firmware/build/Debug/firmware.elf",
+
+
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+
+            "runToEntryPoint": "main"
+        }
+    ]
+}
